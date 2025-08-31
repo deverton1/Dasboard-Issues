@@ -120,7 +120,7 @@ long["Quantidade"] = long.groupby("Série")["Quantidade"].cumsum()
 # ----------------------------
 # Gráfico
 # ----------------------------
-titulo = f"Evolução acumulada por {granularidade.lower()} — pontos e linhas suavizadas"
+titulo = f"Evolução acumulada por {granularidade.lower()}"
 fig = px.line(
     long,
     x="Data",
