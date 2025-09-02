@@ -166,7 +166,7 @@ st.plotly_chart(fig, use_container_width=True, config={"displaylogo": False, "re
 # ----------------------------
 cols = st.columns([1,1,1])
 with cols[0]:
-    st.metric("Período exibido", f"{pd.to_datetime(periodo[0]).date()} → {pd.to_datetime(periodo[1]).date()}")
+    st.metric("Período exibido", f"{pd.to_datetime(periodo[0]).date()} -→ {pd.to_datetime(periodo[1]).date()}")
 with cols[1]:
     st.metric("Séries ativas", ", ".join(sorted(long['Série'].unique())))
 with cols[2]:
